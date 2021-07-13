@@ -1,0 +1,14 @@
+ local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Sovived = - =";
+ Text = "Please join the new discord server for the script , Invite has been copied to your clipboard";
+ Icon = "";
+ Duration = math.huge;
+ Button1 = "Rip";
+ Callback = NotificationBindable;
+})
+
+
+setclipboard ("https://discord.gg/cenGPseCQY)
